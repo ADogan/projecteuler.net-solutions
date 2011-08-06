@@ -3,7 +3,7 @@
 int main(void){
 	int sum = 0;
 	int i;
-	for( i=0; i<10000; i++ )
+	for( i=0; i<1000; i++ )
 	{
 		if(i%3 == 0)
 		{
