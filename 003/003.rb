@@ -7,7 +7,7 @@ while number >= divide_by_number
   if rest_of_division == 0
     number = number / divide_by_number
   else
-    divide_by_number = divide_by_number + 1
+    divide_by_number += 1
   end
 end
  #the largest primary factor is the last in the calculation afaik so just print the last primary factor
