@@ -9,6 +9,9 @@ loop do
     break if result > 0
   end
   break if result == 0
-  number = number + 1
+  number += 1
 end
 puts number
+
+# this is a very slow solution! takes about 8-9 minutes
+# can be made faster with the use of rational methods.
