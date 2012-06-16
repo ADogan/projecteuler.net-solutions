@@ -60,14 +60,16 @@ for i in 0..grid.length-extract
 end
 # puts
 # 
-# puts "==================================="
-# puts "===============c==================="
-# puts "==================================="
 
-# read the grid numbers diagonally
 # calculate and add to total
 
 for row in 0..15
+  
+  # puts "==================================="
+  # puts "===============c==================="
+  # puts "==================================="
+  # read the grid numbers diagonally
+  
   for i in 0+(row*20)..16+(row*20)
     product = 1
     for j in 0..3
@@ -82,14 +84,13 @@ for row in 0..15
     # puts
   end
   # puts
-end
-# puts "==================================="
-# puts "===============d==================="
-# puts "==================================="
-# diagonal from right to left
-
-for row in 0..15
-i = 19
+  
+    
+  # puts "==================================="
+  # puts "===============d==================="
+  # puts "==================================="
+  # diagonal from right to left
+  i = 19
   while i >= 4
       pos = i+(20*row)
     # puts i
@@ -108,6 +109,7 @@ i = 19
   end
   # puts 
   # puts "row is: " + row.to_s
+  
 end
 
-puts "And the greatest product is: " + greatest_product.to_s
+puts greatest_product
