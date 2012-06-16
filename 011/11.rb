@@ -21,15 +21,9 @@ grid = %w[
 20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54
 01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48]
 
-# puts grid[40]
-
 greatest_product = 0
 
 # read the grid numbers from left to right
-# calulate and add to total
-# puts "==================================="
-# puts "===============a==================="
-# puts "==================================="
 for row in 0..19
   for i in (0+(row*20))..(15+(row*20))
     product = 1
@@ -43,11 +37,8 @@ for row in 0..19
   end
   # puts 
 end
-# puts "==================================="
-# puts "===============b==================="
-# puts "==================================="
+
 # read the grid numbers from up to down
-# calculate and add to total
 extract = 61 # this is the position count where no 4 numbers vertically is possible.
 for i in 0..grid.length-extract
   product = 1
@@ -59,16 +50,9 @@ for i in 0..grid.length-extract
       greatest_product = product if product > greatest_product
 end
 # puts
-# 
-
-# calculate and add to total
-
 for row in 0..15
   
-  # puts "==================================="
-  # puts "===============c==================="
-  # puts "==================================="
-  # read the grid numbers diagonally
+  # read the grid numbers diagonally left to right
   
   for i in 0+(row*20)..16+(row*20)
     product = 1
@@ -86,10 +70,7 @@ for row in 0..15
   # puts
   
     
-  # puts "==================================="
-  # puts "===============d==================="
-  # puts "==================================="
-  # diagonal from right to left
+  # read the grid numbers diagonally from right to left
   i = 19
   while i >= 4
       pos = i+(20*row)
