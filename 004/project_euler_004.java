@@ -15,8 +15,8 @@ public class project_euler_004{
             int counter2 = 999;
             while (counter2 > 0){
                 palindromeCandidate = counter1 * counter2;
-                if(itIsAPalindrome(palindromeCandidate)){
-                    if(palindromeCandidate > largestPalindrome){
+                if(palindromeCandidate > largestPalindrome){
+                    if(itIsAPalindrome(palindromeCandidate)){
                         largestPalindrome = palindromeCandidate;
                     }
                 }
